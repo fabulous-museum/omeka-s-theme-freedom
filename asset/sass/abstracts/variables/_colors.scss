@@ -10,7 +10,7 @@ $color__error: #ee001d;
 $color__bg-body: #202020;
 
 // Grayscale
-$color__black: #333;
+$color__black: #000;
 $color__gray-33: #555;
 $color__gray-40: #666;
 $color__gray-47: #777;
@@ -23,13 +23,13 @@ $color__gray-95: #f3f3f3;
 $color__white: #fff;
 
 //Applications
-$color__headings: $color__black;
-$color__main-text: $color__gray-40;
-$color__secondary-text: $color__gray-60;
+$color__headings: #ff8100;
+$color__main-text: #ff8100;
+$color__secondary-text: #ff8100;
 $color__buttons: $color__primary;
 $color__icons: $color__primary;
-$color__link: $color__secondary;
+$color__link: #ff8100;
 $color__menu-drawer: $color__secondary-dark;
-$color__hr: $color__gray-93;
-$color__light-bg: $color__gray-95;
+$color__hr: #ff8100;
+$color__light-bg: #ff8100;
 $color__disabled: $color__gray-80;
