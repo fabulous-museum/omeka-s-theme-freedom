@@ -13,6 +13,7 @@
     input,
     select {
         margin-bottom: 8px !important;
+        color: #202020;
     }
 
     button[type="submit"] {
@@ -187,7 +188,7 @@
 
             &:hover {
                 background-color: $color__buttons;
-                color: $color__white;
+                color: #202020;
             }
 
             input[type="checkbox"] {
@@ -281,7 +282,7 @@
     .filter {
         background-color: $color__secondary-dark;
         border-radius: 3px;
-        color: $color__secondary-light;
+        color: lightgray;
         padding: 2px 10px;
     }
 
