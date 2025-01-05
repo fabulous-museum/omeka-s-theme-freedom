@@ -70,8 +70,23 @@ foreach ($values as $term => $propertyData):
                 <?php if ($showLocale && $valueLang) : ?>
                     <span class="language"><?php echo $valueLang; ?></span>
                 <?php endif; ?>
-                <span class="value-content"><?php echo $filterLocale ? $value->asHtml($lang) : $value->asHtml(); ?></span>
-                <?php if(!$value->isPublic()) : ?>
+		<span class="value-content">
+
+		<?php
+
+		if (preg_match('(Creation date \(PVD\)|Cuesheet|Data Side|Label Side|Primary Volume Descriptor|SecuROM data|Track checksums)', $propertyLabel)) {
+
+		echo '<pre>' . ($filterLocale ? $value->asHtml($lang) : strip_tags($value->asHtml(), '')) . '</pre>';
+
+		} else {
+
+		echo $filterLocale ? $value->asHtml($lang) : $value->asHtml();
+
+		} ?>
+
+		</span>
+
+		<?php if(!$value->isPublic()) : ?>
                     <span class="o-icon-private" aria-role="tooltip" title="<?php echo $this->escapeHtml($translate('Private')); ?>" aria-label="<?php echo $this->escapeHtml($translate('Private')); ?>"></span>
                 <?php endif; ?>
                 <?php if ($valueAnnotation && $showValueAnnotations) : ?>
