@@ -44,14 +44,14 @@ address {
 }
 
 pre {
-    background: $color__white;
+    background: #343434;
     font-family: $font__pre;
     line-height: $font__pre-base-line-height;
-    color: $color__bg-body;
+    color: $color__white;
     margin-bottom: 1.125em;
     max-width: 100%;
     overflow: auto;
-    padding: 1.6em;
+    padding: 1.4em;
 }
 
 code,
