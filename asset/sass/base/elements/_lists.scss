@@ -39,11 +39,14 @@ li > ol {
 
 dt {
     color: $color__white;
-    font-size: $font__h6-sm-size; //18px
+    //font-size: $font__h6-sm-size; //18px
+    font-size: 1em;
     font-weight: 600;
+    line-height: 1.125;
 
     @media (min-width: $md) {
-        font-size: $font__h6-base-size; //30px
+        //font-size: $font__h6-base-size; //30px
+        font-size: 1em;
     }
 }
 
